@@ -172,7 +172,7 @@ html, body {
     content: '';
     position: absolute;
     z-index: -2;
-    width: 65%;
+    width: 95%;
     height: 17vw;
     min-height: 120px;
     background-color: #d42830;
@@ -186,7 +186,7 @@ html, body {
     content: '';
     position: absolute;
     z-index: -1;
-    width: 65%;
+    width: 95%;
     height: 17vw;
     min-height: 120px;
     border-radius: 32px;
@@ -236,4 +236,160 @@ html, body {
     background-color: rgba(255, 255, 255, 0.15);
     width: 90%;
     margin: 40px auto;
+}
+
+.section-title__philosophy {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+    color: #FB3640;
+    padding-left: 2rem;
+}
+
+.section-subtitle {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.section-text {
+    font-family: 'DM Sans', sans-serif;
+    padding-left: 2rem;
+}
+
+.philosophy-item-box {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 3rem;
+    gap: 10%;
+    
+}
+
+.philosophy-item-title {
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.philosophy-item-text {
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 2rem;
+}
+
+.philosophy-item {
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    padding-top: 2rem;
+    flex: 1;
+}
+
+.hero-image-watches {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.hero-image-watches img {
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden; 
+}
+
+.vision {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    display: flex;
+max-width: 1400px; /* Задаем максимальную ширину */
+    margin: 0 auto;    /* Центрируем всю секцию на экране */
+    padding: 7rem 2rem 0 2rem;
+}
+
+.vision__list {
+    flex: 1;
+    max-width: 50%;
+}
+
+.vision picture {
+    flex: 1;
+    max-width: 50%;
+    
+}
+
+.vision__image {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.vision__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.vision__item-number {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #FB3640;
+    font-size: 1.1rem;
+    min-width: 2rem;
+}
+
+.vision__item p {
+    margin: 0;
+}
+
+.vision__title {
+    font-size: 3rem;
+    font-weight: 400;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.5rem;
+    margin-top: 0;
+}
+
+.vision__description {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Discover-more-link {
+    margin-top: 2rem;
+     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 100px;
+    white-space: nowrap;
+    background-color: #892325;
+    color: #DFDFDF;
+    padding: 0.9rem 1.5rem;
+    transition: background-color 0.3s ease;
+    font-family: 'DM sans', sans-serif; 
+}
+
+.Discover-more-link:hover {
+background-color: #ca4144;
+} 
+
+.vision__image {
+    max-width: 100%;  /* Не даёт картинке вылезать за пределы своего контейнера */
+    height: auto;      /* Сохраняет пропорции */
+    border-radius: 20px; /* Скругляет все 4 угла */
+}
+
+.vision picture {
+    flex: 1;
+    max-width: 50%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 }
