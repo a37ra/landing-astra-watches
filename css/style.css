@@ -331,6 +331,7 @@ max-width: 1400px; /* Задаем максимальную ширину */
     gap: 1.5rem;
     padding: 1.5rem 0;
     font-family: 'DM Sans', sans-serif;
+    border-top: 2.4px solid rgba(255, 255, 255, 0.5);
 }
 
 .vision__item-number {
@@ -392,4 +393,151 @@ background-color: #ca4144;
     margin-left: auto;
     display: flex;
     justify-content: flex-end;
+}
+
+.WhyAstra {
+    padding: 30px;
+}
+
+.Craftsmanship {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+    color: #FB3640;
+    padding-left: 2rem;
+}
+
+.WhyAstra__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.55rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.WhyAstra__description {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Базовый контейнер таблицы */
+.whytable {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #0b0b0b; /* Темный фон секции */
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт как на макете */
+  box-sizing: border-box;
+}
+
+/* Общие стили для колонок */
+.whytable__astra,
+.whytable__classic-luxury,
+.whytable__smartwatches {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Настройка стандартных границ (сетка таблицы) */
+.whytable__classic-luxury {
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+
+.whytable__smartwatches {
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  border-right: 1px solid #222222;
+}
+
+/* --- ВЫДЕЛЕННАЯ КОЛОНКА ASTRA --- */
+.whytable__astra {
+  position: relative;
+  border: 1px solid #333333;
+  border-radius: 16px;
+  background-color: #111111; /* Чуть более светлый/выделенный фон */
+  z-index: 2;
+  /* Легкая тень или свечение для эффекта выделения */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* --- ЗАГОЛОВКИ СТОЛБЦОВ --- */
+.whytable__astra-title,
+.whytable__classic-luxury-title,
+.whytable__smartwatches-title {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid #222222;
+  letter-spacing: 0.5px;
+}
+
+.whytable__astra-title {
+  color: #e63946; /* Красный акцент для Astra */
+}
+
+.whytable__classic-luxury-title,
+.whytable__smartwatches-title {
+  color: #ffffff;
+  font-family: sans-serif; /* Для заголовков без засечек */
+}
+
+/* --- ЭЛЕМЕНТЫ СТРОК (ITEMS) --- */
+.whytable__astra-item,
+.whytable__classic-luxury-item,
+.whytable__smartwatches-item {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 12px;
+  font-size: 13px;
+  color: #a0a0a0;
+  border-bottom: 1px solid #222222;
+  box-sizing: border-box;
+}
+
+/* Убираем нижнюю рамку у последних элементов, чтобы не нарушать скругления */
+.whytable__astra-item:last-child {
+  border-bottom: none;
+}
+
+.whytable__classic-luxury-item:last-child,
+.whytable__smartwatches-item:last-child {
+  border-bottom: none;
+}
+
+/* Выравнивание и позиционирование SVG-иконок */
+.whytable__astra-item svg,
+.whytable__classic-luxury-item svg,
+.whytable__smartwatches-item svg {
+  flex-shrink: 0;
+}
+
+/* Текст внутри карточки Astra более яркий */
+.whytable__astra-item {
+  color: #d1d1d1;
+}
+
+/* Адаптив под мобильные устройства (опционально) */
+@media (max-width: 768px) {
+  .whytable {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .whytable__classic-luxury,
+  .whytable__smartwatches {
+    border: 1px solid #222222;
+    border-radius: 12px;
+  }
 }
