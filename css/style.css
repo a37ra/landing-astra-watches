@@ -551,6 +551,7 @@ background-color: #ca4144;
     max-width: 50%;
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 60px;
 }
 
 .watches-on-silk {
@@ -601,3 +602,47 @@ background-color: #ca4144;
     
 }
 
+.precision {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.precision__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 200px;
+    justify-content: center;
+}
+
+.precision__item {
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.precision__title {
+    font-size: 4rem;
+    font-weight: 300;
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.precision__number {
+    font-size: 4rem;
+    font-family: 'DM Sans', monospace;
+}
+
+.precision__subtitle {
+    font-weight: 600;
+}
+
+.precision__text {
+    padding-top: 10px;
+    font-family: 'DM Sans', sans-serif;
+    padding-bottom: 80px;
+}
+
+.precision__image {
+    width: 100%;
+    border-radius: 30px;
+}
