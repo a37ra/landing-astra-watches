@@ -689,4 +689,53 @@ background-color: #ca4144;
 
 .btn-inquire-large:hover {
 background-color: #ca4144;
-} 
+}
+
+.footer__content {
+    max-width: 1670px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #d42830;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__logo img {
+    width: 30px; 
+    height: auto;
+    display: block;
+}
+
+.footer__copyright {
+    color: #d42830;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+.footer__rights {
+    color: #771419;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
