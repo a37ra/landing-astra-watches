@@ -302,8 +302,8 @@ html, body {
     align-items: center;
     gap: 4rem;
     display: flex;
-max-width: 1400px; /* Задаем максимальную ширину */
-    margin: 0 auto;    /* Центрируем всю секцию на экране */
+    max-width: 1400px;
+    margin: 0 auto;   
     padding: 7rem 2rem 0 2rem;
 }
 
@@ -382,9 +382,9 @@ background-color: #ca4144;
 } 
 
 .vision__image {
-    max-width: 100%;  /* Не даёт картинке вылезать за пределы своего контейнера */
-    height: auto;      /* Сохраняет пропорции */
-    border-radius: 20px; /* Скругляет все 4 угла */
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .vision picture {
@@ -396,7 +396,7 @@ background-color: #ca4144;
 }
 
 .WhyAstra {
-    padding: 30px;
+    padding: 3rem;
 }
 
 .Craftsmanship {
@@ -424,19 +424,18 @@ background-color: #ca4144;
     font-family: 'DM Sans', sans-serif;
 }
 
-/* Базовый контейнер таблицы */
 .whytable {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
-  background-color: #0b0b0b; /* Темный фон секции */
+  background-color: #0b0b0b;
   color: #ffffff;
-  font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт как на макете */
+  font-family: 'Courier New', Courier, monospace;
   box-sizing: border-box;
+  padding-top: 4rem;
 }
 
-/* Общие стили для колонок */
 .whytable__astra,
 .whytable__classic-luxury,
 .whytable__smartwatches {
@@ -444,30 +443,29 @@ background-color: #ca4144;
   flex-direction: column;
 }
 
-/* Настройка стандартных границ (сетка таблицы) */
 .whytable__classic-luxury {
-  border-top: 1px solid #222222;
-  border-bottom: 1px solid #222222;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+    border-right: 1px solid #222222;
 }
 
 .whytable__smartwatches {
   border-top: 1px solid #222222;
   border-bottom: 1px solid #222222;
   border-right: 1px solid #222222;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-/* --- ВЫДЕЛЕННАЯ КОЛОНКА ASTRA --- */
 .whytable__astra {
   position: relative;
   border: 1px solid #333333;
   border-radius: 16px;
-  background-color: #111111; /* Чуть более светлый/выделенный фон */
+  background-color: #111111;
   z-index: 2;
-  /* Легкая тень или свечение для эффекта выделения */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
-/* --- ЗАГОЛОВКИ СТОЛБЦОВ --- */
 .whytable__astra-title,
 .whytable__classic-luxury-title,
 .whytable__smartwatches-title {
@@ -482,16 +480,15 @@ background-color: #ca4144;
 }
 
 .whytable__astra-title {
-  color: #e63946; /* Красный акцент для Astra */
+  color: #e63946;
 }
 
 .whytable__classic-luxury-title,
 .whytable__smartwatches-title {
   color: #ffffff;
-  font-family: sans-serif; /* Для заголовков без засечек */
+  font-family: 'DM Sans', sans-serif;
 }
 
-/* --- ЭЛЕМЕНТЫ СТРОК (ITEMS) --- */
 .whytable__astra-item,
 .whytable__classic-luxury-item,
 .whytable__smartwatches-item {
@@ -506,7 +503,6 @@ background-color: #ca4144;
   box-sizing: border-box;
 }
 
-/* Убираем нижнюю рамку у последних элементов, чтобы не нарушать скругления */
 .whytable__astra-item:last-child {
   border-bottom: none;
 }
@@ -516,19 +512,16 @@ background-color: #ca4144;
   border-bottom: none;
 }
 
-/* Выравнивание и позиционирование SVG-иконок */
 .whytable__astra-item svg,
 .whytable__classic-luxury-item svg,
 .whytable__smartwatches-item svg {
   flex-shrink: 0;
 }
 
-/* Текст внутри карточки Astra более яркий */
 .whytable__astra-item {
   color: #d1d1d1;
 }
 
-/* Адаптив под мобильные устройства (опционально) */
 @media (max-width: 768px) {
   .whytable {
     grid-template-columns: 1fr;
@@ -541,3 +534,70 @@ background-color: #ca4144;
     border-radius: 12px;
   }
 }
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.quote-container picture {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.watches-on-silk {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.quote-content {
+    flex: 1;
+    max-width: 550px;
+    color: #ffffff;
+    
+}
+
+.quote {
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 3rem;
+}
+
+.quote-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: serif; 
+    margin: 0;
+    color: #e0e0e0;
+    
+}
+
+.quote-author {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.ag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    color: #FB3640;
+    
+}
+
